@@ -9,9 +9,9 @@ class anime(models.Model):
     tahun_tayang=models.IntegerField()
     musim_tayang=models.CharField(max_length=10)
     jumlah_episode=models.IntegerField()
-    studio_pembuat=models.CharField(max_length=10)
+    studio_pembuat=models.CharField(max_length=20)
     adaptasi=models.CharField(max_length=20)
-    deskripsi=models.CharField(max_length=200)
+    deskripsi=models.CharField(max_length=500)
 
     def __str__(self):
         return self.judul
